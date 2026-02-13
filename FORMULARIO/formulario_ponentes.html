@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario Ponentes</title>
+        <meta name="author" content="Teresa Hernandez Sanchez"/>
+        <link rel="stylesheet" href=".\estilo.css"/>
+
+    </head>
+    <body>
+        <header>
+            <h1>POTENCIAL DIGITAL</h1>
+        </header>
+        <section id="formulario">
+            <form method="GET" action=".\mostrar_datos.php">
+                <legend>Inscripción de ponentes</legend>
+                <label for="nombre" class="label">Nombre:</label>
+                <input type="text" id="nombre" class="introducir" name="nombre"/>
+                <label for="telefono" class="label">Teléfono:</label>
+                <input type="text" id="telefono" class="introducir" name="telefono"/>
+                <label for="correo" class="label">Correo:</label>
+                <input type="text" id="correo" class="introducir" name="correo"/>
+                <label for="tema" class="label">Tema:</label>
+                <select name="tema" id="tema">
+                    <option value="1" selected></option>
+                    <option value="2">Ciberseguridad</option>
+                    <option value="3">Robótica</option>
+                    <option value="4">Inteligencia Artificial</option>
+                </select>
+                <label for="informacion" class="label">Información:</label>
+                <textarea rows="5" id="informacion" name="informacion" class="textarea"></textarea>
+                <input type="submit" value="ENVIAR" class="boton">
+                <input type="reset" value="LIMPIAR" class="boton">
+            </form>
+        </section>
+        <section id="foto">
+            <img src=".\imagenes\sf.jpg" alt="foto logo"/>
+        </section>
+    </body>
+</html>
